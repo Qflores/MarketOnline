@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Cproduct</servlet-name>
+        <servlet-class>Controllers.Cproduct</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Cventas</servlet-name>
+        <servlet-class>Controllers.Cventas</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Chome</servlet-name>
+        <servlet-class>Controllers.Chome</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>Cproduct</servlet-name>
+        <url-pattern>/Cproduct</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Cventas</servlet-name>
+        <url-pattern>/Cventas</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Chome</servlet-name>
+        <url-pattern>/Chome</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            1080
+        </session-timeout>
+    </session-config>
+</web-app>
